@@ -172,5 +172,7 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk
 
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+
 # Include the proprietary files BoardConfig.
 -include vendor/motorola/hiphi/BoardConfigVendor.mk
