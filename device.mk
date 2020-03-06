@@ -66,7 +66,8 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.recovery.usb.rc \
-    init.hiphi.rc
+    init.hiphi.rc \
+    init.recovery.qcom.sh
 
 # fastbootd
 PRODUCT_PACKAGES += \
