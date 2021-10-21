@@ -1,0 +1,57 @@
+# Bluetooth
+persist.vendor.btstack.aac_frm_ctl.enabled=true
+ro.bluetooth.library_name=libbluetooth_qti.so
+
+# Camera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
+
+# CNE
+persist.vendor.cne.feature=1
+
+# Data
+persist.data.df.agg.dl_pkt=10
+persist.data.df.agg.dl_size=4096
+persist.data.df.dev_name=rmnet_usb0
+persist.data.df.dl_mode=5
+persist.data.df.iwlan_mux=9
+persist.data.df.mux_count=8
+persist.data.df.ul_mode=5
+
+# Graphics
+debug.sf.disable_backpressure=1
+debug.sf.enable_hwc_vds=1
+debug.sf.latch_unsignaled=1
+ro.opengles.version=196610
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+ro.qcom.ims.use_moto_vt_ext=true
+
+# Iorap
+ro.iorapd.enable=false
+
+# Media
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+media.stagefright.enable-aac=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+ro.media.recorder-max-base-layer-fps=60
+
+# Netflix
+ro.netflix.bsp_rev=Q8450-34634-1
+
+# NFC
+ro.nfc.port=I2C
+
+# Radio
+persist.vendor.radio.atfwd.start=true
+ro.telephony.default_network=33,33
+
+# Sensors
+persist.vendor.sensors.enable.mag_filter=true
