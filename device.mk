@@ -35,7 +35,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 # Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.1-impl-qti.recovery \
+    android.hardware.boot@1.2-impl-qti.recovery \
     bootctrl.hiphi.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
