@@ -1,0 +1,9 @@
+on post-fs
+    mount none /dev/null vendor/overlay/framework-res__auto_generated_rro_vendor.apk bind
+    mount none /dev/null vendor/overlay/MotoFrameworkResOverlayWFD.apk bind
+    mount none /dev/null vendor/overlay/NfcStWalletResOverlayPrc.apk bind
+    mount none /dev/null vendor/overlay/SystemUI__auto_generated_rro_vendor.apk bind
+    mount none /dev/null vendor/overlay/TelephonyResMotCommon.apk bind
+    mount none /dev/null vendor/overlay/WifiRes6GhzEnable.apk bind
+    mount none /dev/null vendor/overlay/WifiResDualStaApEnableAOSP.apk bind
+    mount none /dev/null vendor/overlay/WifiResSoftap80211axEnableAOSP.apk bind
