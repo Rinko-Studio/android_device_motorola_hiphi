@@ -28,6 +28,16 @@ system_ext/lib/libmmparser_lite.so
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 
+# Overlay
+-product/vendor_overlay/31/overlay/framework-res__auto_generated_rro_vendor.apk|da39a3ee5e6b4b0d3255bfef95601890afd80709
+-product/vendor_overlay/31/overlay/MotoFrameworkResOverlayWFD.apk|da39a3ee5e6b4b0d3255bfef95601890afd80709
+-product/vendor_overlay/31/overlay/NfcStWalletResOverlayPrc.apk|da39a3ee5e6b4b0d3255bfef95601890afd80709
+-product/vendor_overlay/31/overlay/SystemUI__auto_generated_rro_vendor.apk|da39a3ee5e6b4b0d3255bfef95601890afd80709
+-product/vendor_overlay/31/overlay/TelephonyResMotCommon.apk|da39a3ee5e6b4b0d3255bfef95601890afd80709
+-product/vendor_overlay/31/overlay/WifiRes6GhzEnable.apk|da39a3ee5e6b4b0d3255bfef95601890afd80709
+-product/vendor_overlay/31/overlay/WifiResDualStaApEnableAOSP.apk|da39a3ee5e6b4b0d3255bfef95601890afd80709
+-product/vendor_overlay/31/overlay/WifiResSoftap80211axEnableAOSP.apk|da39a3ee5e6b4b0d3255bfef95601890afd80709
+
 # Permissions
 system_ext/etc/permissions/privapp-permissions-qti-system-ext.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
