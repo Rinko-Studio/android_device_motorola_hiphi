@@ -7,6 +7,10 @@
 DEVICE_PATH := device/motorola/hiphi
 DEVICE_PREBUILT_PATH := device/motorola/hiphi-prebuilt
 
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
 # A/B
 AB_OTA_UPDATER := true
 
@@ -151,3 +155,6 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
 
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk
+
+# Include the proprietary files BoardConfig.
+-include vendor/motorola/hiphi/BoardConfigVendor.mk
