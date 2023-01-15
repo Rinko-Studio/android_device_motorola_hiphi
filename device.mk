@@ -55,6 +55,17 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    FrameworkResOverlayHiphi \
+    WifiResOverlayHiphi \
+    DialerOverlayHiphi \
+    SettingsOverlayHiphi \
+    CarrierConfigOverlayHiphi \
+    TelephonyOverlayHiphi \
+    SystemUIOverlayHiphi \
+    SettingsProviderOverlayHiphi
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
