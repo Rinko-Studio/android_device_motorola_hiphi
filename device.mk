@@ -63,6 +63,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PREBUILT_PATH)/kernel/dtb.img:dtb.img
 
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    FrameworkResOverlayHiphi \
+    WifiResOverlayHiphi \
+    DialerOverlayHiphi \
+    SettingsOverlayHiphi \
+    CarrierConfigOverlayHiphi \
+    TelephonyOverlayHiphi \
+    SystemUIOverlayHiphi \
+    SettingsProviderOverlayHiphi
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
