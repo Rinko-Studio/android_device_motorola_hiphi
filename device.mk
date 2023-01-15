@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_PREBUILT_PATH := device/motorola/hiphi-prebuilt
+
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
@@ -13,6 +15,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 # Enable Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/motorola/hiphi/hiphi-vendor.mk)
 
 # AAPT
 # Device uses high-density artwork where available
@@ -48,12 +52,17 @@ TARGET_SCREEN_WIDTH := 1080
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
-    init.recovery.usb.rc
+    init.recovery.usb.rc \
+    init.hiphi.rc
 
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
+
+# Kernel
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PREBUILT_PATH)/kernel/dtb.img:dtb.img
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
@@ -66,6 +75,11 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayHiphi \
     SettingsProviderOverlayHiphi
 
+# Moto hardware
+PRODUCT_PACKAGES += \
+    MotoActions \
+    MotoCommonOverlay
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -76,6 +90,30 @@ include $(LOCAL_PATH)/properties/default.mk
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Telephony
+PRODUCT_PACKAGES += \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml \
+    ims-ext-common \
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-hidl-wrapper-prd \
+    qti_telephony_hidl_wrapper_prd.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml \
+    qti-telephony-utils-prd \
+    qti_telephony_utils_prd.xml \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 
 # Update engine
 PRODUCT_PACKAGES += \

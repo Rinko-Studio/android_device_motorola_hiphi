@@ -7,6 +7,10 @@
 DEVICE_PATH := device/motorola/hiphi
 DEVICE_PREBUILT_PATH := device/motorola/hiphi-prebuilt
 
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
 # A/B
 AB_OTA_UPDATER := true
 
@@ -35,6 +39,9 @@ TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := hiphi|hiphic
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
@@ -169,3 +176,6 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
 include device/qcom/sepolicy/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+
+# Include the proprietary files BoardConfig.
+-include vendor/lenovo/halo/BoardConfigVendor.mk
