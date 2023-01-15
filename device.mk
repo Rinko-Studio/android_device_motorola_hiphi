@@ -75,6 +75,11 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayHiphi \
     SettingsProviderOverlayHiphi
 
+# Moto hardware
+PRODUCT_PACKAGES += \
+    MotoActions \
+    MotoCommonOverlay
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
