@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_PREBUILT_PATH := device/motorola/hiphi-prebuilt
+
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
@@ -49,6 +51,10 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
+
+# Kernel
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PREBUILT_PATH)/kernel/dtb.img:dtb.img
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
