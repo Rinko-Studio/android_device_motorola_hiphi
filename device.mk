@@ -97,7 +97,8 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayHiphi \
     TelephonyOverlayHiphi \
     SystemUIOverlayHiphi \
-    SettingsProviderOverlayHiphi
+    SettingsProviderOverlayHiphi \
+    SettingsOverlayHiphic
 
 # Moto hardware
 PRODUCT_PACKAGES += \
