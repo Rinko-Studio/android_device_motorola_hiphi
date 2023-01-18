@@ -67,7 +67,6 @@ BOARD_KERNEL_CMDLINE += printk.devkmsg=on firmware_class.path=/data/vendor/param
 BOARD_BOOTCONFIG += \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
-    androidboot.selinux=permissive \
     androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
@@ -178,6 +177,7 @@ PLATFORM_SECURITY_PATCH := 2022-09-01
 include device/qcom/sepolicy/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Include the proprietary files BoardConfig.

@@ -1,0 +1,2 @@
+get_prop(vendor_dpmd_vndr, vendor_persist_tcm_prop)
+set_prop(vendor_dpmd_vndr, vendor_persist_tcm_prop)

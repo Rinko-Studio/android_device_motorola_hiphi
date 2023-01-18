@@ -1,2 +1,6 @@
 # Audio AIDL interface
 android.hardware.bluetooth.audio.IBluetoothAudioProviderFactory/sysbta    u:object_r:hal_audio_service:s0
+
+# Moto service
+motsettings                               u:object_r:mot_system_service:s0
+motoexttelephony                          u:object_r:mot_system_service:s0
