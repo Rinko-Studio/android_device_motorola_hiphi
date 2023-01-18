@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="config_cpu_info" translatable="false">Snapdragon 8 Gen 1</string>
+</resources>
