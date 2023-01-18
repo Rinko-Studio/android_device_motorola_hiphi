@@ -77,6 +77,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PREBUILT_PATH)/kernel/dtb.img:dtb.img
 
+# NFC
+PRODUCT_PACKAGES += \
+    NfcNci \
+    Tag \
+    SecureElement \
+    com.android.nfc_extras
+
 # RRO Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayHiphi \
