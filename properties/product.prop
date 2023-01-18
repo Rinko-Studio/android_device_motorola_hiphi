@@ -4,3 +4,7 @@ ro.config.media_vol_steps=25
 # Surfaceflinger
 ro.surface_flinger.use_smart_90_for_video=false
 ro.surface_flinger.use_content_detection_for_reresh_rate=false
+
+# Moto Camera
+persist.vendor.camera.privapp.list=com.motorola.camera3
+vendor.camera.aux.packagelist=com.motorola.camera3

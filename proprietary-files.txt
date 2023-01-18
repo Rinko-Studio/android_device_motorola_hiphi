@@ -32,6 +32,45 @@ system_ext/lib/libmmparser_lite.so
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 
+# MotCamera3
+product/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED
+product/etc/permissions/com.motorola.camera3.xml
+product/etc/permissions/deviceowner-configuration-com.motorola.camera3.xml
+product/etc/permissions/privapp-permissions-com.motorola.camera3.xml
+product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera3.xml
+product/etc/permissions/com.motorola.camera3.xml
+product/etc/permissions/com.motorola.camera3.content.ai.xml
+product/etc/permissions/com.motorola.camera3.hiphic.xml
+product/priv-app/MotCamera3/MotCamera3.apk;OVERRIDES=Aperture;PRESIGNED
+system_ext/bin/motsettings
+system_ext/etc/permissions/com.motorola.androidx.camera.extensions.xml
+system_ext/framework/com.motorola.androidx.camera.extensions.jar
+system_ext/etc/public.libraries-motocamera.txt
+system_ext/lib/libmcf_native_window_helper.motocamera.so
+system_ext/lib64/libmcf_native_window_helper.motocamera.so
+
+# Moto Permissions
+product/etc/permissions/com.motorola.moto-uirefresh.xml
+product/etc/permissions/com.motorola.motodisplay.xml
+product/etc/permissions/privapp-permissions-com.motorola.motodisplay.xml
+system_ext/etc/permissions/com.motorola.androidx.camera.extensions.xml
+etc/permissions/com.motorola.frameworks.core.addon.xml
+
+# Moto libs
+-system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
+system/etc/permissions/com.motorola.motosignature.xml
+system/etc/permissions/moto-core_services.xml
+system/etc/permissions/moto-settings.xml
+-framework/moto-core_services.jar
+-framework/moto-settings.jar
+-framework/com.motorola.motosignature.jar
+-framework/moto-core_services.jar
+-framework/moto-settings.jar
+-framework/com.motorola.frameworks.core.addon.jar
+-framework/moto-checkin.jar
+-framework/motoaudioeffectsdk.jar
+-system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk
+
 # Permissions
 system_ext/etc/permissions/privapp-permissions-qti-system-ext.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
