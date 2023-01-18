@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/hiphi/device.mk)
 
 # Inherit common configurations
-$(call inherit-product, vendor/kscope/target/product/mobile.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_CHARACTERISTICS := nosdcard
@@ -21,6 +21,6 @@ PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := hiphi
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_MODEL := XT2201-2
-PRODUCT_NAME := kscope_hiphi
+PRODUCT_NAME := aosp_hiphi
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
