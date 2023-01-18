@@ -1,2 +1,6 @@
 ro.config.vc_call_vol_steps=11
 ro.config.media_vol_steps=25
+
+# Surfaceflinger
+ro.surface_flinger.use_smart_90_for_video=false
+ro.surface_flinger.use_content_detection_for_reresh_rate=false
